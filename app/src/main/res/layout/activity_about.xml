@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginVertical="40dp"
+        android:src="@drawable/profile"
+        >
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/txt_name"
+        style="@style/textInAbout"
+        android:layout_marginVertical="30dp"
+        android:text="@string/my_name"
+        app:layout_constraintTop_toBottomOf="@id/img_profile"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="130dp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txt_gmail"
+        app:layout_constraintTop_toBottomOf="@id/txt_name"
+        android:layout_marginVertical="30dp"
+        style="@style/textInAbout"
+        android:text="@string/email"
+        tools:ignore="MissingConstraints">
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
